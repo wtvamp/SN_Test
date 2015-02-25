@@ -1,0 +1,28 @@
+<div class="navbar navbar-default navbar-main">
+    <div class="navbar-header col-xs-2 col-md-2 col-lg-2_5">
+        <span class="navbar-brand">
+            <span class="pull-left logo-container"><span class="sn-intauditmanagement-logo"></span><span class="text">Internal Audit Management</span></span>
+        </span>
+    </div>
+        <div class="col-xs-4 col-md-{{#if search}}5{{else}}8{{/if}} col-lg-{{#if search}}4{{else}}8_5{{/if}}">
+            <ul class="nav navbar-nav nav-app-tabs"></ul>
+            <div class="dropdown dropdown-app-tabs pull-left">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="count"></span><span class="sn-select-arr-down"></span></a>
+                <ul class="dropdown-menu"></ul>
+            </div>
+        </div>
+        <div class="col-xs-4 col-md-3 col-lg-3 {{#unless search}} hidden{{/unless}}">
+          
+        </div>
+        <div class="nav navbar-nav navbar-right" style="padding-right: 10px">
+            <div class="col-md-12 text-right">
+                <div class="dropdown">
+                    <a class="dropdown-toggle user" data-toggle="dropdown">{{name}}<span class="triangle"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="purge" href="javascript:">Refresh Data (All Tabs)</a></li> <!-- <= temporary? -->
+                    </ul>
+                </div>
+                <span class="sn-back-in-time"></span>
+            </div>
+        </div>
+</div>

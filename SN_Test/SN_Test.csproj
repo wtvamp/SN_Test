@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64D5BC3C-2E50-472B-A5FD-24AF857B5326}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SN_Test</RootNamespace>
+    <AssemblyName>SN_Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\Common\Navigation\navigation.html" />
+    <Content Include="Scripts\Common\Utils\smer.js" />
+    <Content Include="Scripts\Common\Validation\validator.js" />
+    <Content Include="Scripts\Vendor\handlebars-1.0.0\handlebars.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\.travis.yml" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\bower.json" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\component.json" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\CONTRIBUTING.md" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\package.json" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\README.md" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\SavedViews\view.ldsh" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\view.hbs" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\view.ldsh" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\README.md" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\.travis.yml" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\bootstrap\bootstrap-slickgrid.scss" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\bootstrap\slickgrid.less" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\collection.json" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\component.json" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\package.json" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\README.md" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\App\application.js" />
+    <Content Include="Scripts\App\Main\header.html" />
+    <Content Include="Scripts\App\Main\header.js" />
+    <Content Include="Scripts\Common\Utils\stickit.js" />
+    <Content Include="Scripts\Common\Utils\utils.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\Vendor\backbone-1.0.0\backbone.js" />
+    <Content Include="Scripts\Vendor\backbone.stickit-0.7.0\backbone.stickit.js" />
+    <Content Include="Scripts\Vendor\jquery-1.10.2\jquery-1.10.2.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\.gitattributes" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\.gitignore" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\dist\lodash.compat.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\dist\lodash.compat.min.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\dist\lodash.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\dist\lodash.min.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\dist\lodash.underscore.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\dist\lodash.underscore.min.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\index.js" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\LICENSE.txt" />
+    <Content Include="Scripts\Vendor\lodash-2.4.1\lodash.js" />
+    <Content Include="Scripts\Vendor\require-2.1.8\require.js" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\controls.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\editors.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\formatters.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\groupformatters.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\plugins.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\rooster.js" />
+    <Content Include="Scripts\Vendor\rooster-0.1.0\SavedViews\view.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\.gitignore" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\controls\slick.columnpicker.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\controls\slick.columnpicker.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\controls\slick.pager.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\controls\slick.pager.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\css\smoothness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-autotooltips.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-checkbox-row-select.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-colspan.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-composite-editor-item-details.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-custom-column-value-extractor.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-explicit-initialization.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-grouping.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-header-row.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-multi-column-sort.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-optimizing-dataview.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-plugin-headerbuttons.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-plugin-headermenu.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-spreadsheet.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example-totals-via-data-provider.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example1-simple.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example10-async-post-render.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example11-autoheight.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example12-fillbrowser.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example13-getItem-sorting.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example14-highlighting.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example2-formatters.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example3-editing.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example3a-compound-editors.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example3b-editing-with-undo.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example4-model.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example5-collapsing.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example6-ajax-loading.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example7-events.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example8-alternative-display.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\example9-row-reordering.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\examples.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\index.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\examples\slick.compositeeditor.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\actions.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\ajax-loader-small.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\arrow_redo.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\arrow_right_peppermint.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\arrow_right_spearmint.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\arrow_undo.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\bullet_blue.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\bullet_star.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\bullet_toggle_minus.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\bullet_toggle_plus.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\calendar.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\collapse.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\comment_yellow.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\down.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\drag-handle.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\editor-helper-bg.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\expand.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\header-bg.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\header-columns-bg.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\header-columns-over-bg.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\help.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\info.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\listview.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\pencil.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\row-over-bg.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\sort-asc.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\sort-asc.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\sort-desc.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\sort-desc.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\stripes.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\tag_red.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\tick.png" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\user_identity.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\images\user_identity_plus.gif" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\firebugx.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery-1.7.min.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery.event.drag-2.2.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery.event.drop-2.2.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery.jsonp-2.4.min.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery.simulate.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\jquery.sparkline.min.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\qunit.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\lib\qunit.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\MIT-LICENSE.txt" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.autotooltips.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.cellcopymanager.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.cellrangedecorator.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.cellrangeselector.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.cellselectionmodel.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.checkboxselectcolumn.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.headerbuttons.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.headerbuttons.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.headermenu.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.headermenu.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.rowmovemanager.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\plugins\slick.rowselectionmodel.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick-default-theme.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.core.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.dataview.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.editors.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.formatters.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.grid.css" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.grid.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.groupitemmetadataprovider.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\slick.remotemodel.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\dataview\dataview.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\dataview\index.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\grid\grid.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\grid\index.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\index.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\init benchmark.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\model benchmarks.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\plugins\autotooltips.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\plugins\autotooltips.js" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\scrolling benchmark raf.html" />
+    <Content Include="Scripts\Vendor\slickgrid-33e75b07bf\tests\scrolling benchmarks.html" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\.gitattributes" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\.gitignore" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\bootstrap\bootstrap-slickgrid.js" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\Gruntfile.js" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\index.html" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\MIT-LICENSE.txt" />
+    <Content Include="Scripts\Vendor\slickgrid-bootstrap-42ef3f93a2\plugins\slick.responsiveness.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19411</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19411/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
